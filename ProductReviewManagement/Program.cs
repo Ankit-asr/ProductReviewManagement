@@ -29,7 +29,10 @@ namespace ProductReviewManagement
                 new ProductReview(){ProductId=16,UserId=10,Rating=4,Review="Nice",isLike=true }
             };
             Management management = new Management();
-            management.TopRecords(productReviewList);
+            //management.TopRecords(productReviewList);
+            Console.WriteLine("Products with Ratings greater than 3 and ID 1,4 or 9 are : ");
+            management.SelectedRecords(productReviewList);
+
         }
     }
 }
